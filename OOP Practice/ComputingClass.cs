@@ -36,7 +36,13 @@ namespace OOP_Practice
 
         public int TotalClassValueAdded()
         {
-            
+            int total = 0;
+            for (int i = 0; i < students.Length; i++)
+            {
+                total = total + students[i].CalculateVA();
+            }
+
+            return total;
         }
 
     }

@@ -19,7 +19,7 @@ namespace OOP_Practice
             grade = g;
         }
 
-        private static Dictionary<string, int> grades = new Dictionary<string, int>()
+        public static Dictionary<string, int> grades = new Dictionary<string, int>()
         {
             {"A*", 140},
             {"A", 120},
