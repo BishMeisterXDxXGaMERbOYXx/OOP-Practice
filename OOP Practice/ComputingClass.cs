@@ -6,16 +6,19 @@ namespace OOP_Practice
 {
     class ComputingClass
     {
-        private static string className;
-        private Student[] students;
+        private string className;
+        private string teacherName;
+        Student[] students;
 
-        public ComputingClass(string c)
+        public ComputingClass(string c, string t)
         {
             className = c;
+            teacherName = t;
         }
+
         public void AssignStudents(int size)
         {
-
+            students = new Student[size];
             string forename;
             string surname;
             string predGrade;
@@ -43,6 +46,14 @@ namespace OOP_Practice
             }
 
             return total;
+        }
+
+        public int AverageValueAdded()
+        {
+            int total = TotalClassValueAdded();
+            int averageVA = total / students.Length;
+
+            return averageVA;
         }
 
     }

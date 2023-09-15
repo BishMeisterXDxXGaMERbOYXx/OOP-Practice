@@ -7,7 +7,10 @@ namespace OOP_Practice
         static void Main(string[] args)
         {
 
-           
+            ComputingClass tjc = new ComputingClass("tjc");
+
+            tjc.AssignStudents(2);
+            Console.WriteLine(tjc.AverageValueAdded());
 
         }
     }
