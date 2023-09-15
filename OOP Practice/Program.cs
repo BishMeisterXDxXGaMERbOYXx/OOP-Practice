@@ -7,7 +7,9 @@ namespace OOP_Practice
         static void Main(string[] args)
         {
 
-            
+            ComputingDepartment department = new ComputingDepartment();
+
+            department.CreateClasses(5);
 
         }
     }

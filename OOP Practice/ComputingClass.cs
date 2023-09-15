@@ -16,9 +16,10 @@ namespace OOP_Practice
             teacherName = t;
         }
 
-        public void AssignStudents(int size)
+        public void AssignStudents(int numberOfStudents)
         {
-            students = new Student[size];
+
+            students = new Student[numberOfStudents];
             string forename;
             string surname;
             string predGrade;
@@ -35,6 +36,7 @@ namespace OOP_Practice
                 grade = Console.ReadLine();
                 students[i] = new Student(forename, surname, predGrade, grade);
             }
+
         }
 
         public int TotalClassValueAdded()
@@ -54,6 +56,11 @@ namespace OOP_Practice
             int averageVA = total / students.Length;
 
             return averageVA;
+        }
+
+        public string GetClassName()
+        {
+            return className;
         }
 
     }
